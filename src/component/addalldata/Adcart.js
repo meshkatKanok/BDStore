@@ -48,7 +48,7 @@ const Adcart = (props) => {
         <div>
         <h1 className='text-white font-bold text-2xl m-5'>Product Details</h1>
         <div className='product-details'>
-            <h1 className='font-bold text-lg'>Time required: {}s</h1>
+            <h1 className='font-bold text-lg'>Time required: {total}s</h1>
           </div>
         </div>
             
