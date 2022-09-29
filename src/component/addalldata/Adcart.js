@@ -55,11 +55,13 @@ const Adcart = (props) => {
 <div >
   <h1 className='text-2xl text-white mx-3 mb-4 font-bold mt-20'>Add A Break</h1>
  <div className='product-details'>
+ <div className='time-add-break'>
  <button onClick={()=>HandleaddClick(10)}   className=' btn-add btn'>10s</button>
   <button onClick={()=>HandleaddClick(20)}  className='btn-add btn'>20s</button>
   <button onClick={()=>HandleaddClick(30)} className='btn-add btn'>30s</button>
   <button onClick={()=>HandleaddClick(40)}  className='btn-add btn'>40s</button>
   <button onClick={()=>HandleaddClick(50)}  className='btn-add btn'>50s</button>
+ </div>
  </div>
 </div>
 {/* Add a break time--------------------------end */}

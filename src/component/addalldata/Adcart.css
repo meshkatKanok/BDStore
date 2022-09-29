@@ -28,6 +28,11 @@
     margin:10px;
     border-radius: 5px;
  }
+ .time-add-break{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
  .btn-add{
    height:50px;
    width:50px;

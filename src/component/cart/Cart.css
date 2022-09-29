@@ -15,13 +15,18 @@
         display: grid;
         grid-template-columns:1fr;
         gap:35px;
-        padding: 0% 2%;
+        padding-left: 0px;
+       
      
     }
     .all-cart{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap:40px;
+        width: 100%;
+    }
+    .newart{
+        width:100%;
     }
 
  }
