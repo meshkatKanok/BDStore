@@ -13,7 +13,7 @@ const Shop = (props) => {
                     <h2 className="card-title font-semibold">{title}</h2>
                     <p>{description}</p>
                     <p className='font-bold price'>Price: ${price}</p>
-                    <p className='font-bold time'>Time required: {second}s</p>
+                    <p className='font-bold time'>Delivery Time: {second}days</p>
                     <div className="card-actions justify-center card-btn">
                         <button onClick={()=>addtoTime(props.product)} className="btn bg-orange-600 btn-new">Add to cart</button>
                     </div>

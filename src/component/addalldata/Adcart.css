@@ -34,15 +34,21 @@
    align-items: center;
  }
  .btn-add{
-   height:50px;
-   width:50px;
+   height:60px;
+   width:60px;
    border-radius: 50%;
    background:tomato;
    color:white;
-   margin-left:10px;
+   margin-left:4px;
    border: none;
  }
  .activity-btn{
    width:75%;
    
+ }
+ .toasty{
+   color: blue;
+   height: 100px;
+   width: 100px;
+   margin: 0 auto;
  }
