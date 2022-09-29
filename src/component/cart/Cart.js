@@ -3,6 +3,7 @@ import { faStore } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Adcart from '../addalldata/Adcart';
 import Shop from '../shop/Shop';
+import Question from '../Question/Question'
 import './Cart.css'
  
 
@@ -20,13 +21,6 @@ const [newPro,setPro]=useState([])
       setPro(newProduct);
     
     }
-  
-   
-  
-
-   
-    
-   
     return (
         <div>
             <div className='cart'>
@@ -40,11 +34,13 @@ const [newPro,setPro]=useState([])
             store.map(product=><Shop addtoTime={addtoTime} key={product.id} product={product}></Shop>)
            }
            </div>
+           <Question></Question>
                 </div>
           
              <Adcart newPro={newPro}></Adcart>
            
         </div>
+        
 
         </div>
         

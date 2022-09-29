@@ -2,16 +2,28 @@ import './Adcart.css'
 import Image from '../image/image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
  
 
 const Adcart = (props) => {
+  const notify = () => toast("Wow so easy!");
   const [add,setAdd]=useState(0);
+  const saveLocaldata= localStorage.getItem("breakAdd")
   const HandleaddClick=(ok)=>{
-     setAdd(ok)
+    setAdd(ok);
+    localStorage.setItem("breakAdd",ok)
+    }
+   console.log(saveLocaldata);
 
-  }
-  
+
+
+
+
+
+
+ 
  const {newPro}=props
  let total=0;
  for(const Product of newPro){
@@ -80,11 +92,13 @@ const Adcart = (props) => {
         <div>
         <div className='product-details flex justify-between'>
             <h1 className='font-bold text-lg  font-bold text-lg text-orange-600'>Break time:</h1>
-            <span className='font-bold text-lg font-bold text-lg text-orange-400'>{add}seconds</span>
+            <span className='font-bold text-lg font-bold text-lg text-orange-400'>{saveLocaldata?saveLocaldata:add}seconds</span>
           </div>
         </div>
         <div className='card-actions justify-center mt-7'>
-        <button className='btn bg-cyan-900 activity-btn'>Activity Completed</button>
+        <button onClick={notify} className='btn bg-cyan-900 activity-btn'>Activity Completed</button>
+        <ToastContainer />
+
         </div>
             
         </div>
