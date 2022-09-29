@@ -2,14 +2,22 @@ import './Adcart.css'
 import Image from '../image/image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+ 
 
 const Adcart = (props) => {
- console.log(props.newPro);
+  const [add,setAdd]=useState(0);
+  const HandleaddClick=(ok)=>{
+     setAdd(ok)
+
+  }
+  
  const {newPro}=props
  let total=0;
  for(const Product of newPro){
   total=total+Product.second
  }
+ 
    
     
     return (
@@ -25,7 +33,7 @@ const Adcart = (props) => {
             </div>
             <div className='already-added'>
           </div>  
-          <div className='cart-all'>
+          <div className='cart-all mt-10'>
           <h1 className='text-2xl text-white mx-3 mb-4 font-bold'>AllReay Added List</h1>
           <div className='all-adedcart'>
             
@@ -47,21 +55,34 @@ const Adcart = (props) => {
 <div >
   <h1 className='text-2xl text-white mx-3 mb-4 font-bold mt-20'>Add A Break</h1>
  <div className='product-details'>
- <button className='break-second'>10</button>
-  <button>20</button>
-  <button>30</button>
-  <button>40</button>
-  <button>50</button>
+ <button onClick={()=>HandleaddClick(10)}   className=' btn-add btn'>10s</button>
+  <button onClick={()=>HandleaddClick(20)}  className='btn-add btn'>20s</button>
+  <button onClick={()=>HandleaddClick(30)} className='btn-add btn'>30s</button>
+  <button onClick={()=>HandleaddClick(40)}  className='btn-add btn'>40s</button>
+  <button onClick={()=>HandleaddClick(50)}  className='btn-add btn'>50s</button>
  </div>
 </div>
 {/* Add a break time--------------------------end */}
 
 
-        <div>
+        <div className='mt-10'>
         <h1 className='text-white font-bold text-2xl m-5'>Product Details</h1>
-        <div className='product-details'>
-            <h1 className='font-bold text-lg'>Time required: {total}s</h1>
+        <div className='product-details flex justify-between'>
+            <h1 className='font-bold text-lg text-orange-600'>Time required:</h1>
+            <span className='font-bold text-lg text-orange-400'>{total} seconds</span>
           </div>
+         
+        </div>
+
+
+        <div>
+        <div className='product-details flex justify-between'>
+            <h1 className='font-bold text-lg  font-bold text-lg text-orange-600'>Break time:</h1>
+            <span className='font-bold text-lg font-bold text-lg text-orange-400'>{add}seconds</span>
+          </div>
+        </div>
+        <div className='card-actions justify-center mt-7'>
+        <button className='btn bg-cyan-900 activity-btn'>Activity Completed</button>
         </div>
             
         </div>

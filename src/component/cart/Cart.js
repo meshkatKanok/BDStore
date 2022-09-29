@@ -20,6 +20,10 @@ const [newPro,setPro]=useState([])
       setPro(newProduct);
     
     }
+  
+   
+  
+
    
     
    
@@ -38,7 +42,7 @@ const [newPro,setPro]=useState([])
            </div>
                 </div>
           
-             <Adcart  newPro={newPro}></Adcart>
+             <Adcart newPro={newPro}></Adcart>
            
         </div>
 

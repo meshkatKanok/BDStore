@@ -28,3 +28,16 @@
     margin:10px;
     border-radius: 5px;
  }
+ .btn-add{
+   height:50px;
+   width:50px;
+   border-radius: 50%;
+   background:tomato;
+   color:white;
+   margin-left:10px;
+   border: none;
+ }
+ .activity-btn{
+   width:75%;
+   
+ }
