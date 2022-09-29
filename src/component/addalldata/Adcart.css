@@ -1,0 +1,30 @@
+ .setcart img{
+    width:100px;
+    padding:20px;
+
+ }
+ .personal-information{
+    display: flex;
+    align-items: center;
+  
+    
+ }
+ .addedCart{
+    background:white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px tomato;
+ }
+ .all-adedcart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin:5px;
+   
+ }
+ .product-details{
+    background:rgb(240, 235, 235);
+    padding: 20px;
+    margin:10px;
+    border-radius: 5px;
+ }

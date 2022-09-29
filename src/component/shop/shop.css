@@ -1,0 +1,26 @@
+ .img{
+     height: 200px;
+ }
+ .card-size{
+    height:500px;
+ }
+ .newart{
+    position:relative;
+    border: 1px solid tomato;  
+ }
+ .btn-new{
+    position:absolute;
+    bottom: 0;
+    border: none;
+   
+ }
+ .card-btn button{
+    width: 100%;
+ }
+  
+ .newart .price{
+    margin:0px;
+ }
+ .newart .time{
+    margin-bottom: 20px;
+ }

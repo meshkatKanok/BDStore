@@ -1,0 +1,27 @@
+.cart{
+     display: grid;
+     grid-template-columns:4fr 2fr;
+     gap:35px;
+     padding: 0% 2%;
+  
+ }
+ .all-cart{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:40px;
+ }
+ @media only screen and (max-width: 600px) {
+    .cart{
+        display: grid;
+        grid-template-columns:1fr;
+        gap:35px;
+        padding: 0% 2%;
+     
+    }
+    .all-cart{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:40px;
+    }
+
+ }
