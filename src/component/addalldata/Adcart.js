@@ -26,7 +26,7 @@ const Adcart = (props) => {
             <div className='already-added'>
           </div>  
           <div className='cart-all'>
-          <h1 className='text-2xl text-white mx-3 mb-4 font-bold'>AlReay Added List</h1>
+          <h1 className='text-2xl text-white mx-3 mb-4 font-bold'>AllReay Added List</h1>
           <div className='all-adedcart'>
             
                <div className='addedCart'>
@@ -43,6 +43,18 @@ const Adcart = (props) => {
  </div>
                </div>
           </div>
+ {/* Add a break time-------------------------- */}
+<div >
+  <h1 className='text-2xl text-white mx-3 mb-4 font-bold mt-20'>Add A Break</h1>
+ <div className='product-details'>
+ <button className='break-second'>10</button>
+  <button>20</button>
+  <button>30</button>
+  <button>40</button>
+  <button>50</button>
+ </div>
+</div>
+{/* Add a break time--------------------------end */}
 
 
         <div>
