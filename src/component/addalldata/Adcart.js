@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 
 const Adcart = (props) => {
-  const notify = () => toast(" Wow!Congratulation Complate Your Order");
+  // const notify = () => toast(" Wow!Congratulation Complate Your Order");
   const [add, setAdd] = useState(0);
   const saveLocaldata = localStorage.getItem("breakAdd")
   const HandleaddClick = (ok) => {
